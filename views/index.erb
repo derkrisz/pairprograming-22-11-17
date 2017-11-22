@@ -1,0 +1,12 @@
+<h2>
+  <a class="btn" href="/pizzas/new">Order Pizza</a>
+<hr>
+<p>Orders by Name</p>
+ <% @pizzas.each do |pizza| %>
+ <div class= 'order-list'>
+   <p>Name: <a href="/pizzas/<%= pizza.id %>"><%= pizza.pretty_name %></a> </p>
+
+ </div>
+ <% end %>
+
+</h2>

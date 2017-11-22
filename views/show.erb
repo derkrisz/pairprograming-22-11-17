@@ -1,0 +1,11 @@
+<div>
+<%= @pizza.pretty_name %>
+<%= @pizza.topping %>
+<%= @pizza.quantity %>
+<a class="btn" href="/pizzas/<%= @pizza.id %>/edit">Edit Order</a>
+<form action="/pizzas/<%=@pizza.id%>" method="post">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>
+
+</div>
